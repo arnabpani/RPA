@@ -1,0 +1,38 @@
+{"level":30,"time":"2023-03-02T08:34:51.881Z","pid":29932,"hostname":"Arnab-PC","msg":"Listening on 50395"}
+{"level":30,"time":"2023-03-02T08:34:52.139Z","pid":29932,"hostname":"Arnab-PC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-03-02T08:34:52.140Z","pid":29932,"hostname":"Arnab-PC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-03-02T08:34:52.159Z","pid":29932,"hostname":"Arnab-PC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-03-02T08:34:52.159Z","pid":29932,"hostname":"Arnab-PC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-03-02T08:34:52.204Z","pid":29932,"hostname":"Arnab-PC","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2023-03-02T08:34:55.007Z","pid":29932,"hostname":"Arnab-PC","msg":"End of node method newBrowser"}
+{"level":30,"time":"2023-03-02T08:34:55.065Z","pid":29932,"hostname":"Arnab-PC","msg":"Start of node method newContext"}
+{"level":30,"time":"2023-03-02T08:34:55.066Z","pid":29932,"hostname":"Arnab-PC","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2023-03-02T08:34:55.066Z","pid":29932,"hostname":"Arnab-PC","msg":"Trace file: "}
+{"level":30,"time":"2023-03-02T08:34:55.111Z","pid":29932,"hostname":"Arnab-PC","msg":"Changed active context"}
+{"level":30,"time":"2023-03-02T08:34:55.112Z","pid":29932,"hostname":"Arnab-PC","msg":"End of node method newContext"}
+{"level":30,"time":"2023-03-02T08:34:55.140Z","pid":29932,"hostname":"Arnab-PC","msg":"Changed active context"}
+{"level":30,"time":"2023-03-02T08:34:55.202Z","pid":29932,"hostname":"Arnab-PC","msg":"Start of node method newPage"}
+{"level":30,"time":"2023-03-02T08:34:55.202Z","pid":29932,"hostname":"Arnab-PC","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2023-03-02T08:34:56.329Z","pid":29932,"hostname":"Arnab-PC","msg":"Video path: undefined"}
+{"level":30,"time":"2023-03-02T08:34:56.330Z","pid":29932,"hostname":"Arnab-PC","msg":"Changed active page"}
+{"level":30,"time":"2023-03-02T08:34:59.392Z","pid":29932,"hostname":"Arnab-PC","msg":"Error of node method  newPage"}
+================= Original suppressed error =================
+page.goto: Navigation failed because page was closed!
+=========================== logs ===========================
+navigating to "https://robocorp.typeform.com/to/ig9496MD", waiting until "load"
+============================================================
+    at newPage (c:\ProgramData\robocorp\ht\87a8e76_b1f3c24_09529949\lib\site-packages\Browser\wrapper\index.js:7545:18)
+    at async PlaywrightServer.newPage (c:\ProgramData\robocorp\ht\87a8e76_b1f3c24_09529949\lib\site-packages\Browser\wrapper\index.js:7770:28) {
+  name: 'Error'
+}
+=============================================================
+{"level":30,"time":"2023-03-02T08:34:59.433Z","pid":29932,"hostname":"Arnab-PC","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2023-03-02T08:34:59.438Z","pid":29932,"hostname":"Arnab-PC","msg":"Error of node method  takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (c:\ProgramData\robocorp\ht\87a8e76_b1f3c24_09529949\lib\site-packages\Browser\wrapper\index.js:6290:11)
+    at takeScreenshot (c:\ProgramData\robocorp\ht\87a8e76_b1f3c24_09529949\lib\site-packages\Browser\wrapper\index.js:6336:5)
+    at PlaywrightServer.takeScreenshot (c:\ProgramData\robocorp\ht\87a8e76_b1f3c24_09529949\lib\site-packages\Browser\wrapper\index.js:7770:34)
+    at handleUnary (c:\ProgramData\robocorp\ht\87a8e76_b1f3c24_09529949\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:674:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+=============================================================

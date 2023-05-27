@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20230511 13:16:57.580" rpa="true" schemaversion="3">
+<suite id="s1" name="Tasks" source="C:\Users\arnab\Desktop\ROBOCORP\Robot Framework Test\tasks.robot">
+<test id="s1-t1" name="Attach to running Chrome Browser and execute Google search" line="8">
+<kw name="Attach Chrome Browser" library="RPA.Browser.Selenium">
+<arg>9222</arg>
+<doc>Attach to an existing instance of Chrome or Chromium.</doc>
+<msg timestamp="20230511 13:16:58.609" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg timestamp="20230511 13:16:58.633" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<msg timestamp="20230511 13:18:05.494" level="INFO">====== WebDriver manager ======</msg>
+<msg timestamp="20230511 13:18:06.196" level="INFO">Downloaded webdriver to: C:\Users\arnab\AppData\Local\robocorp\webdrivers\.wdm\drivers\chromedriver\win32\113.0.5672.63\chromedriver.exe</msg>
+<msg timestamp="20230511 13:18:06.198" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg timestamp="20230511 13:19:08.846" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230511 13:19:08.846" level="FAIL">WebDriverException: Message: unknown error: cannot connect to chrome at localhost:9222
+from chrome not reachable
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00478893+48451]
+	(No symbol) [0x0040B8A1]
+	(No symbol) [0x00314F20]
+	(No symbol) [0x0030B0E5]
+	(No symbol) [0x00335858]
+	(No symbol) [0x00330151]
+	(No symbol) [0x0032FF31]
+	(No symbol) [0x00360798]
+	(No symbol) [0x0036047C]
+	(No symbol) [0x0035A0B6]
+	(No symbol) [0x00337E08]
+	(No symbol) [0x00338F2D]
+	GetHandleVerifier [0x006D8E3A+2540266]
+	GetHandleVerifier [0x00718959+2801161]
+	GetHandleVerifier [0x0071295C+2776588]
+	GetHandleVerifier [0x00502280+612144]
+	(No symbol) [0x00414F6C]
+	(No symbol) [0x004111D8]
+	(No symbol) [0x004112BB]
+	(No symbol) [0x00404857]
+	BaseThreadInitThunk [0x75A77D49+25]
+	RtlInitializeExceptionChain [0x7711B74B+107]
+	RtlClearBits [0x7711B6CF+191]
+</msg>
+<status status="FAIL" starttime="20230511 13:16:58.609" endtime="20230511 13:19:08.846"/>
+</kw>
+<kw name="Go To" library="RPA.Browser.Selenium">
+<arg>https://www.google.com/?hl=en</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20230511 13:19:08.846" endtime="20230511 13:19:08.846"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser.Selenium">
+<arg>name:q</arg>
+<arg>Dinosaur</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230511 13:19:08.846" endtime="20230511 13:19:08.859"/>
+</kw>
+<kw name="Press Keys" library="RPA.Browser.Selenium">
+<arg>name:q</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20230511 13:19:08.861" endtime="20230511 13:19:08.862"/>
+</kw>
+<status status="FAIL" starttime="20230511 13:16:58.609" endtime="20230511 13:19:08.862">WebDriverException: Message: unknown error: cannot connect to chrome at localhost:9222
+from chrome not reachable
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00478893+48451]
+	(No symbol) [0x0040B8A1]
+	(No symbol) [0x00314F20]
+	(No symbol) [0x0030B0E5]
+	(No symbol) [0x00335858]
+	(No symbol) [0x00330151]
+	(No symbol) [0x0032FF31]
+	(No symbol) [0x00360798]
+	(No symbol) [0x0036047C]
+	(No symbol) [0x0035A0B6]
+	(No symbol) [0x00337E08]
+	(No symbol) [0x00338F2D]
+	GetHandleVerifier [0x006D8E3A+2540266]
+	GetHandleVerifier [0x00718959+2801161]
+	GetHandleVerifier [0x0071295C+2776588]
+	GetHandleVerifier [0x00502280+612144]
+	(No symbol) [0x00414F6C]
+	(No symbol) [0x004111D8]
+	(No symbol) [0x004112BB]
+	(No symbol) [0x00404857]
+	BaseThreadInitThunk [0x75A77D49+25]
+	RtlInitializeExceptionChain [0x7711B74B+107]
+	RtlClearBits [0x7711B6CF+191]
+</status>
+</test>
+<doc>Google using an already open Chrome browser.</doc>
+<status status="FAIL" starttime="20230511 13:16:57.583" endtime="20230511 13:19:08.881"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tasks">Tasks</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
